@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --bg-color: #adb5bd;
+  --secondary-bg-color: #6c757d;
+  --text-color: #f8f9fa;
+  --accent-color: #495057;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--accent-color);
+}
+header {
+  background-color: var(--secondary-bg-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1.5em;
+}
+header h1 {
+  color: var(--text-color);
+}
+header a {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+header a:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-bg-color);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 82.7vh;
+}
+form label {
+  color: var(--text-color);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+form input {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+  border: 2px solid rgba(119, 117, 117, 0.26);
+  border-radius: 8px;
+}
+form button {
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  padding: 15px 20px;
+  border: transparent;
+  transition: 0.3s ease;
+  margin: 25px 0;
+}
+form button:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-bg-color);
+}
+#total {
+  font-size: 30px;
+  color: var(--text-color);
+}
+#totalAmount {
+  color: rgba(16, 223, 16, 0.767);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 30px;
+}

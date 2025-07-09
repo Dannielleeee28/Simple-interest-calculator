@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Dannielle" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/calculator.png"
+      type="image/x-icon"
+    />
+    <title>Simple Interest Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <h1>Simple Interest Calculator</h1>
+      </div>
+      <div class="github">
+        <a href="https://github.com/Dannielleeee28" target="_blank">GITHUB</a>
+      </div>
+    </header>
+    <form>
+      <label for="principal">Principal amount</label>
+      <input type="number" id="principal" />
+
+      <label for="interest">Interest rate</label>
+      <input type="number" id="interest" />
+
+      <label for="years">Years to pay</label>
+      <input type="number" id="years" />
+
+      <button type="button" onclick="calculateRate()">Calculate</button>
+
+      <p id="total">Total: <span id="totalAmount">₱ 0.00</span></p>
+    </form>
+    <footer>
+      <p>2025&copy; Dannielle Marvic H. Banaban</p>
+    </footer>
+    <script src="src/script.js"></script>
+  </body>
+</html>
